@@ -1,3 +1,13 @@
 .bg-card {
     background-color: #061c25;
 }
+
+.link-champion {
+    color: white;
+    text-decoration: none;
+}
+
+.link-champion:hover {
+    color: white;
+    text-decoration: none;
+}

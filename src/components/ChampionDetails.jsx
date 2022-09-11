@@ -22,9 +22,12 @@ const ChampionDetails = () => {
     return (
         <div className="container">
             <h2>Champion Details</h2>
-            <div className="my-5">
+            <div className="">
                 <h3>{champion.name}</h3>
-                <img src={imgUrl} alt="" />
+                <div>
+                    <img src={imgUrl} alt="" />
+                </div>
+                <small>{champion.lore}</small>
             </div>
         </div>
     )
