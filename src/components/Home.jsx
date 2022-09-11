@@ -18,10 +18,12 @@ const Home = () => {
     return (
         <div className="">
             <h1>League of Legends Champions</h1>
-            <div className="row">
-                {Object.values(champions).map((champion) => (
-                    <ChampionCard key={champion.id} champion={champion} />
-                ))}
+            <div className="col-11 mx-auto">
+                <div className="row">
+                    {Object.values(champions).map((champion) => (
+                        <ChampionCard key={champion.id} champion={champion} />
+                    ))}
+                </div>
             </div>
         </div>
     )

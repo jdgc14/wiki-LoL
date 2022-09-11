@@ -13,7 +13,7 @@ const AbilitiesChampion = ({ spells }) => {
                 {spells?.map((spell) => (
                     <div
                         key={spell.id}
-                        className="col-6 border-start border-bottom border-top p-2"
+                        className="col-6 col-md-4 border-start border-bottom border-top p-2"
                     >
                         <h6>{spell.name}</h6>
                         <div className="">
