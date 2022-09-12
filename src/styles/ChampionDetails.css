@@ -15,6 +15,7 @@ physicalDamage {
 .scroll {
     display: flex;
     overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .skin-img {
