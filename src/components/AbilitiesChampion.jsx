@@ -8,8 +8,8 @@ const AbilitiesChampion = ({ spells }) => {
 
     return (
         <div className="py-3">
-            <h4>Abilities</h4>
-            <div className="abilities-scroll">
+            <h4 className="fw-bold text-info">Abilities</h4>
+            <div className="scroll">
                 {spells?.map((spell) => (
                     <div
                         key={spell.id}

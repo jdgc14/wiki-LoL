@@ -11,11 +11,14 @@ const ChampionCard = ({ champion }) => {
             <div className="p-1 border rounded bg-card link-pointer">
                 <Link to={`/champion/${champion.id}`} className="link-champion">
                     <div>
-                        <img src={imgUrl + champion.id + '.png'} />
+                        <img
+                            src={imgUrl + champion.id + '.png'}
+                            loading="lazy"
+                        />
                     </div>
                     <h3>{champion.name}</h3>
                     <small style={{ textTransform: 'capitalize' }}>
-                        {champion.title}
+                        {/* {champion.title} */}
                     </small>
                 </Link>
             </div>

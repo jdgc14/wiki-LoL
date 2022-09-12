@@ -6,9 +6,9 @@ const PassiveChampion = ({ passive }) => {
         'https://ddragon.leagueoflegends.com/cdn/12.17.1/img/passive/'
 
     return (
-        <div className="pb-3">
+        <div className="pb-3 border-bottom">
             <div className="m-auto col-10 col-md-4">
-                <h4>Passive</h4>
+                <h4 className="fw-bold text-info">Passive</h4>
                 <small>{passive?.name}</small>
                 <div className="">
                     <img

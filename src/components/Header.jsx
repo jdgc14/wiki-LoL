@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className="">
             <div className="col-10 col-md-4 m-auto">
-                <img src={logo} className="logo" />
+                <img src={logo} className="logo" onClick={goToHome} />
             </div>
             <div
                 className="position-absolute"
@@ -23,7 +23,7 @@ const Header = () => {
                 }}
             >
                 <button onClick={goToHome} className="btn btn-link">
-                    <i class="fa-solid fa-house button-home"></i>
+                    <i className="fa-solid fa-house button-home"></i>
                 </button>
             </div>
         </div>
