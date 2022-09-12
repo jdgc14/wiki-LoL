@@ -51,3 +51,7 @@
 .bg-tank {
     background-color: var(--tank--color);
 }
+
+.title-favorites {
+    text-shadow: 0 0 1.5px #fff;
+}

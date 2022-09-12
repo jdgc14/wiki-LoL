@@ -10,6 +10,10 @@ const Header = () => {
         navigate('/')
     }
 
+    const goToFavorites = () => {
+        navigate('/favorites')
+    }
+
     return (
         <div className="">
             <div className="col-10 col-md-4 m-auto">
@@ -25,9 +29,9 @@ const Header = () => {
                 <button onClick={goToHome} className="btn btn-link p-0">
                     <i className="fa-solid fa-house button-home"></i>
                 </button>
-                {/* <button className="btn btn-link p-0">
-                    <i className="fa-solid fa-bars button-home"></i>
-                </button> */}
+                <button onClick={goToFavorites} className="btn btn-link p-0">
+                    <i className="fa-solid fa-star button-home"></i>
+                </button>
             </div>
         </div>
     )

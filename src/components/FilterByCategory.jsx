@@ -20,7 +20,7 @@ const FilterByCategory = () => {
             <div>
                 <button
                     onClick={() => dispatch(readAllChampionsThunk())}
-                    className="link-button bg-white text-dark p-1 m-1 rounded"
+                    className="link-button bg-white text-dark p-1 m-1 rounded fw-semibold"
                 >
                     All
                 </button>
