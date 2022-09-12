@@ -29,7 +29,7 @@ const FilterByCategory = () => {
                         value={category}
                         onClick={(e) => changeCategory(e.target.value)}
                         key={category}
-                        className={`text-capitalize link-button bg-${category.toLowerCase()} p-1 m-1 rounded`}
+                        className={`text-capitalize link-button bg-${category.toLowerCase()} p-1 m-1 rounded border`}
                     >
                         {category}
                     </button>

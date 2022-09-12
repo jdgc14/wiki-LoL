@@ -51,7 +51,3 @@
 .bg-tank {
     background-color: var(--tank--color);
 }
-
-.tag-champion {
-    border: 0;
-}

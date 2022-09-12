@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { filterChampionsByCategory } from '../store/slices/champions.slice'
 import '../styles/ChampionCard.css'
+import imgs from '../assets/imgs'
 
 const ChampionCard = ({ champion }) => {
     const dispatch = useDispatch()
@@ -33,11 +34,17 @@ const ChampionCard = ({ champion }) => {
                     {champion.tags.map((tag) => (
                         <button
                             key={tag}
-                            value={tag}
-                            onClick={(e) => changeCategory(e.target.innerText)}
-                            className={`bg-${tag.toLowerCase()} rounded col-5 col-lg-4 fw-bold tag-champion`}
+                            onClick={() => changeCategory(tag)}
+                            className={`bg-${tag.toLowerCase()} rounded border col-6 col-lg-4 fw-bold tag-champion d-flex`}
                         >
-                            <small value={tag}>{tag}</small>
+                            <small className="position-absolute tag-text">
+                                {tag}
+                            </small>
+                            <div
+                                className={`bg-${tag.toLowerCase()} tag-transition col-12`}
+                            >
+                                <img src={imgs[tag]} className="tag-logo" />
+                            </div>
                         </button>
                     ))}
                 </div>
