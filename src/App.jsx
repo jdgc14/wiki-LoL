@@ -8,7 +8,7 @@ import ChampionsFavorites from './components/ChampionsFavorites'
 
 function App() {
     return (
-        <div className="App bg-dark text-light text-center">
+        <div className="App text-light text-center">
             <HashRouter>
                 <Header />
                 <Routes>

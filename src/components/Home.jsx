@@ -15,7 +15,6 @@ const Home = () => {
     useEffect(() => {
         dispatch(readAllChampionsThunk())
     }, [])
-
     return (
         <>
             {isLoading ? (
@@ -26,7 +25,7 @@ const Home = () => {
                 <div className="">
                     <FilterByCategory />
                     {/* <h1>Champions</h1> */}
-                    <div className="col-11 mx-auto">
+                    <div className="col-10 mx-auto">
                         <div className="row">
                             {champions?.map((champion) => (
                                 <ChampionCard

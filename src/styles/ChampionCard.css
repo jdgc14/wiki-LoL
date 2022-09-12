@@ -1,5 +1,5 @@
 .bg-card {
-    background-color: #061c25;
+    background-color: hwb(197 2% 85% / 0.6);
 }
 
 .link-champion {
@@ -17,8 +17,8 @@
     height: 42px;
     position: relative;
     justify-content: center;
-    /* align-content: center; */
     align-items: center;
+    color: white;
 }
 
 .tag-logo {

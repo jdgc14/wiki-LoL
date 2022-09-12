@@ -90,9 +90,7 @@ const ChampionCard = ({ champion }) => {
                             onClick={() => changeCategory(tag)}
                             className={`bg-${tag.toLowerCase()} rounded border col-6 col-lg-4 fw-bold tag-champion d-flex`}
                         >
-                            <small className="position-absolute tag-text">
-                                {tag}
-                            </small>
+                            <small className="position-absolute">{tag}</small>
                             <div
                                 className={`bg-${tag.toLowerCase()} tag-transition col-12`}
                             >

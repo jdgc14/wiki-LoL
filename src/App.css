@@ -7,6 +7,13 @@
     --tank--color: #2b335e;
 }
 
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/wallpaper-lol.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 .App {
     min-height: 100vh;

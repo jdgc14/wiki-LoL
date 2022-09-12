@@ -20,10 +20,11 @@ const Header = () => {
                 <img src={logo} className="logo" onClick={goToHome} />
             </div>
             <div
-                className="position-absolute d-flex flex-column gap-3"
+                className="position-fixed d-flex flex-column gap-3"
                 style={{
                     right: '5%',
-                    top: '15px',
+                    top: '65px',
+                    zIndex: '1',
                 }}
             >
                 <button onClick={goToHome} className="btn btn-link p-0">

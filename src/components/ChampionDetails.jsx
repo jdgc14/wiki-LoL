@@ -82,9 +82,8 @@ const ChampionDetails = () => {
                 </div>
             ) : (
                 <div className="container">
-                    {/* <h2>Champion Details</h2> */}
                     <div className="py-3 position-relative">
-                        <h6 className="text-capitalize m-0 text-secondary">
+                        <h6 className="text-capitalize m-0 text-white">
                             {champion.title}
                         </h6>
                         <h1 className="text-uppercase fw-bold fst-italic">
@@ -123,7 +122,7 @@ const ChampionDetails = () => {
                                     onClick={() => changeCategory(tag)}
                                     className={`bg-${tag.toLowerCase()} rounded border col-3 fw-bold tag-champion d-flex`}
                                 >
-                                    <small className="position-absolute tag-text">
+                                    <small className="position-absolute">
                                         {tag}
                                     </small>
                                     <div
