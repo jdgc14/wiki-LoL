@@ -1,8 +1,6 @@
 import React from 'react'
 
 const AbilitiesChampion = ({ spells }) => {
-    console.log(spells)
-
     const urlAbilityImg =
         'https://ddragon.leagueoflegends.com/cdn/12.17.1/img/spell/'
 

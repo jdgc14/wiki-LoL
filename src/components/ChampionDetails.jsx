@@ -26,8 +26,6 @@ const ChampionDetails = () => {
 
     useEffect(readChampion, [])
 
-    console.log(champion)
-
     return (
         <>
             {isLoading ? (

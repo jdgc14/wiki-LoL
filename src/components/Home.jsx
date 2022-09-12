@@ -1,25 +1,21 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { readAllChampionsThunk } from '../store/slices/champions.slice'
 import ChampionCard from './ChampionCard'
+import FilterByCategory from './FilterByCategory'
 
 const Home = () => {
-    const URL =
-        'https://ddragon.leagueoflegends.com/cdn/12.17.1/data/en_US/champion.json'
+    const dispatch = useDispatch()
 
-    const [champions, setChampions] = useState([])
+    const champions = useSelector((state) => state.championsSlice)
 
-    const [isLoading, setIsLoading] = useState(true)
+    const isLoading = useSelector((state) => state.isLoading)
 
-    const readAllChampions = (url) => {
-        axios
-            .get(url)
-            .then((res) => setChampions(res.data.data))
-            .then(() => setIsLoading(false))
-    }
+    useEffect(() => {
+        dispatch(readAllChampionsThunk())
+    }, [])
 
-    useEffect(() => readAllChampions(URL), [])
-
-    console.log(champions)
     return (
         <>
             {isLoading ? (
@@ -28,10 +24,11 @@ const Home = () => {
                 </div>
             ) : (
                 <div className="">
+                    <FilterByCategory />
                     {/* <h1>Champions</h1> */}
                     <div className="col-11 mx-auto">
                         <div className="row">
-                            {Object.values(champions).map((champion) => (
+                            {champions?.map((champion) => (
                                 <ChampionCard
                                     key={champion.id}
                                     champion={champion}

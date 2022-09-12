@@ -16,15 +16,18 @@ const Header = () => {
                 <img src={logo} className="logo" onClick={goToHome} />
             </div>
             <div
-                className="position-absolute"
+                className="position-absolute d-flex flex-column gap-3"
                 style={{
                     right: '5%',
                     top: '15px',
                 }}
             >
-                <button onClick={goToHome} className="btn btn-link">
+                <button onClick={goToHome} className="btn btn-link p-0">
                     <i className="fa-solid fa-house button-home"></i>
                 </button>
+                {/* <button className="btn btn-link p-0">
+                    <i className="fa-solid fa-bars button-home"></i>
+                </button> */}
             </div>
         </div>
     )
