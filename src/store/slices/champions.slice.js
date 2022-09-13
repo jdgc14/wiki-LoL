@@ -2,7 +2,6 @@ import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 import { setIsLoading } from './isLoading.slice'
 
-// Cambiamos mySlice por el nombre de nuestro slice (usersSlice, toDosSlice...)
 export const championsSlice = createSlice({
     name: 'champions',
     initialState: [],
