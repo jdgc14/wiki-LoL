@@ -12,11 +12,15 @@
 ```sh
 git clone https://github.com/jdgc14/wiki-LoL.git
 ```
-2. Install NPM packages
+2. Go to directory project
+```sh
+cd wiki-LoL/
+```
+3. Install NPM packages
 ```sh
 npm install
 ```
-3. Run project
+4. Run project
 ```sh
 npm run dev
 ```
