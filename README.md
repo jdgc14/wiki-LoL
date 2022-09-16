@@ -26,6 +26,3 @@ npm run dev
 
 ## Tools:
 **React JS ⚛️**, **Redux JS**, and use tools like **React Router**, **Bootstrap**.
-
-## 
-I use this api: https://developer.riotgames.com
