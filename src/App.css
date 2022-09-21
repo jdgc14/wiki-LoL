@@ -1,10 +1,10 @@
 :root {
-    --assassin--color: #591311;
-    --fighter--color: #89591d;
-    --mage--color: #4d58f2;
-    --marksman--color: #3a4f34;
-    --support--color: #335c56;
-    --tank--color: #2b335e;
+    --assassin--color: #d83833;
+    --fighter--color: #d3882c;
+    --mage--color: #565fda;
+    --marksman--color: #52a73b;
+    --support--color: #309c8c;
+    --tank--color: #061ea5;
 }
 
 body {
@@ -61,4 +61,12 @@ body {
 
 .title-favorites {
     text-shadow: 0 0 1.5px #fff;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
 }

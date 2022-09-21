@@ -54,7 +54,7 @@ const ChampionCard = ({ champion }) => {
 
     return (
         <div className="col-8 col-sm-6 col-md-4 col-lg-3 mx-auto my-3">
-            <div className="p-3 border rounded bg-card position-relative">
+            <div className="p-3 border rounded bg-card position-relative zoom">
                 <div
                     className="position-absolute text-warning"
                     style={{ right: '10px', top: '5px', cursor: 'pointer' }}
