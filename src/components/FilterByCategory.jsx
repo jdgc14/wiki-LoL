@@ -16,7 +16,7 @@ const FilterByCategory = () => {
     }
 
     return (
-        <div className="row">
+        <div className="">
             <div>
                 <button
                     onClick={() => dispatch(readAllChampionsThunk())}

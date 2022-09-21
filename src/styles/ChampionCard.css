@@ -1,5 +1,5 @@
 .bg-card {
-    background-color: hwb(197 2% 85% / 0.6);
+    background-color: rgba(5, 29, 38, 0.6);
 }
 
 .link-champion {
@@ -28,7 +28,7 @@
 .tag-transition {
     opacity: 0;
     position: absolute;
-    transition: .9s;
+    transition: 1.5s;
     z-index: 1;
 }
 
